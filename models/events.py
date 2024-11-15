@@ -9,8 +9,9 @@ class Event(BaseModel):
     tags: List[str]
     location: str
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
+                "id": 0,
                 "title": "FastAPI Study",
                 "image" : "https://www.test.pri/image.png",
                 "description": "간단한 설명을 추가하세요",
